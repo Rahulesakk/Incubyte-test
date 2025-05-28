@@ -1,0 +1,23 @@
+{
+  "name": "incubyte-test",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000I\u0000n\u0000c\u0000u\u0000b\u0000y\u0000t\u0000e\u0000-\u0000t\u0000e\u0000s\u0000t\u0000\r\u0000 \u0000C\u0000h\u0000e\u0000c\u0000k\u0000i\u0000n\u0000g\u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rahulesakk/Incubyte-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rahulesakk/Incubyte-test/issues"
+  },
+  "homepage": "https://github.com/Rahulesakk/Incubyte-test#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
