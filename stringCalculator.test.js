@@ -12,6 +12,12 @@ test("add's two comma-separated numbers", () => {
 test('adds numbers with newline and comma separators', () => {
     expect(add("1\n2,4")).toBe(7);
 })
+test('supports custom delimiter', () => {
+    expect(add("//;\n1;2")).toBe(3);
+  });
 test('throws error on single negative number', () => {
     expect(() => add("1,-2")).toThrow("Negative Numbers not allowed -2");
 });
+test('throws error with all negative numbers listed', () => {
+    expect(() => add("-1,-2,3")).toThrow("negative numbers not allowed -1,-2");
+  });

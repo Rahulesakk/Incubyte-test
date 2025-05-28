@@ -5,6 +5,13 @@ function add(numbers){
     
     let delimiter = /,|\n/;
     let numberString = numbers
+
+    if (numbers.startsWith("//")) {
+        const parts = numbers.split("\n");
+        delimiter = new RegExp(parts[0].substring(2));
+        numberString = parts.slice(1).join("\n");
+    }
+    
     const numList = numberString
     .split(delimiter)
     .map(n => n.trim())
