@@ -6,3 +6,6 @@ test("returns 0 for empty string" ,() =>{
 test("returns number for a single Number", () => {
     expect(add('1')).toBe(1);
 })
+test("add's two comma-separated numbers", () => {
+    execPath(add('1,3')).toBe(4);
+})
