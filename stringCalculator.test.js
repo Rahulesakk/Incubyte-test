@@ -9,3 +9,6 @@ test("returns number for a single Number", () => {
 test("add's two comma-separated numbers", () => {
     expect(add('1,3')).toBe(4);
 })
+test('throws error on single negative number', () => {
+    expect(() => add("1,-2")).toThrow("negative numbers not allowed -2");
+});
