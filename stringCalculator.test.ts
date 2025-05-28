@@ -1,5 +1,5 @@
-import {add} from "./stringCalculator"
+const { add } = require("./stringCalculator")
 
 test("returns 0 for empty string" ,() =>{
-    except(add('')).toBe(0);
+    expect(add('')).toBe(0);
 })
